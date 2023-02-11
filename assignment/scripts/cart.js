@@ -38,3 +38,11 @@ listItems();
 // Create a function called empty. It should:
 // reset the basket to an empty array
 
+function empty(){
+    if (basket.length > 0){
+        basket.length = 0;
+        return basket;
+    }
+}
+empty()
+console.log('Now basket array should be empty:', basket);
